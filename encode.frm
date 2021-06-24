@@ -9,6 +9,7 @@ Dim rs As DAO.Recordset
     ' Get the user name and password.
     user_name = Replace$(txtUserName.Text, "'", "''")
     password = Replace$(txtPassword.Text, "'", "''")
+    password = Replace$(txtPassword.Text, "'", "''")
 
     ' Compose the query.
     query = "SELECT COUNT (*) FROM Passwords " & _
